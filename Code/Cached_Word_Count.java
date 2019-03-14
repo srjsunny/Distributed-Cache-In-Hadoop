@@ -38,7 +38,8 @@ public class Cached_Word_Count extends Mapper<LongWritable,Text,Text,LongWritabl
 				Path getFilePath = new Path(cacheFiles[0].toString());  
 				
 				/*
-				We open the file using FileSystem object, convert the input byte stream to character streams using InputStreamReader 
+				We open the file using FileSystem object, convert the input byte stream to 
+				character streams using InputStreamReader 
 				and wrap it in BufferedReader to make it more efficient
 				*/
 				BufferedReader reader = new BufferedReader(new InputStreamReader(fs.open(getFilePath)));
